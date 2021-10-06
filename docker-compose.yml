@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  lendesk-service:
+    build: .
+    environment:
+      - TZ=America/Vancouver
+      - REDIS_PORT=6379
+      - REDIS_HOST=redis
+      - PORT=9090
+    ports:
+      - 9090:9090
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    environment:
+      - TZ=America/Vancouver
+    ports:
+      - 6379:6379
