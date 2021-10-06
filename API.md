@@ -68,6 +68,8 @@
 
   * **Code:** 401 UNAUTHORIZED <br />
     **Content:** `{ message: "User does not exist"}`
+    
     OR
+
     **Content:** `{ message: "Incorrect Password"}`
 
