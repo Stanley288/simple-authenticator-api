@@ -11,7 +11,6 @@ passport.use(new BasicStrategy(async (username, password, done) => {
 
   if (!user) {
     return done(new APIError('User does not exist', httpStatus.UNAUTHORIZED ), false)
-    // return done(new Error('sucka'))
   }
 
   const { hash, salt } = user
