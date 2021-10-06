@@ -12,14 +12,16 @@
   
 *  **URL Params**
 
-  None
+    None
 
-* **Body Params**
+* **Body**
 
      **Required:**
  
-   `username: string`
-   `password: string`
+   `username: String`
+
+   `password: String`
+
    *password must be 8 to 32 characters long, and it must contain at least a lowercase letter, an uppercase letter, and a digit.*
 
 * **Success Response:**
@@ -30,8 +32,11 @@
 * **Error Response:**
 
   * **Code:** 400 BAD REQUEST <br />
+
     **Content:** `{ message: "Validation Failed", details: {...} }`
+
   OR
+
     **Content:** `{ message : "Username already exists." }`
 
 
@@ -50,7 +55,7 @@
   
 *  **URL Params**
 
-  None
+    None
 
 * **Headers Params**
 
