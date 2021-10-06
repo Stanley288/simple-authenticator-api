@@ -31,6 +31,6 @@ Using Node.js as your framework and Redis for data storage, we need an authentic
 
 1. Redis is meant for temporary storage solution, registered user data can be lost. It should be replaced with a permanent database.
 2. Unit tests and integration tests should be added for automated testing.
-3. A rate limiting middleware should be added for brute-force password attacks.
+3. A rate limiting middleware should be added to prevent brute-force password attacks.
 4. HTTPS protocal should enabled when deploying to production environment.
 

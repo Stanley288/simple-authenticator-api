@@ -20,7 +20,7 @@ const main = async () => {
   app.listen(config.port, () => {
     const { environment, port } = config
 
-    log.info('lendesk-service started 🚀 🌚', { port, environment })
+    log.info('simple-authentication-api started 🚀 🌚', { port, environment })
   })
 }
 

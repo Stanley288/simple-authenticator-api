@@ -13,7 +13,7 @@ const create = async (req, res, next) => {
     const existingUser = await Redis.get(username)
 
     if (existingUser) {
-      return next(new APIError('Username already exists.', httpStatus.BAD_REQUEST))
+      return next(new APIError('User already exists.', httpStatus.BAD_REQUEST))
     }
 
     const { hash, salt } = await setPassword(password)

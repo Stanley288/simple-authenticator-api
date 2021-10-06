@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  lendesk-service:
+  simple-authentication-api:
     build: .
     environment:
       - TZ=America/Vancouver

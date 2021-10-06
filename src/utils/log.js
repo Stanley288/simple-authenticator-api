@@ -1,7 +1,7 @@
 import bunyan from 'bunyan'
 
 const log = bunyan.createLogger({
-  name: 'lendesk-service',
+  name: 'simple-authentication-api',
 })
 
 export default log

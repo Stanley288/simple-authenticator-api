@@ -10,4 +10,4 @@ ps:
 	@docker-compose ps
 
 logs:
-	@docker-compose logs --follow lendesk-service | ./node_modules/.bin/bunyan
+	@docker-compose logs --follow simple-authentication-api | ./node_modules/.bin/bunyan
